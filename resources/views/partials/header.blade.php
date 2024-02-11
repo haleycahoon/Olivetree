@@ -32,10 +32,10 @@
         <div class="containerHeader">
             <div class="navbar-menu">
                 <a href="{{ route('index') }}" class="navbar-item">Home</a>
-                <a href="#" class="navbar-item">Men</a> <!-- No route specified -->
-                <a href="#" class="navbar-item">Women</a> <!-- No route specified -->
-                <a href="#" class="navbar-item">Accessories</a> <!-- No route specified -->
-                <a href="#" class="navbar-item">Toys and Collectables</a> <!-- No route specified -->
+                <a href="{{ route('men') }}" class="navbar-item">Men</a> <!-- No route specified -->
+                <a href="{{ route('women') }}" class="navbar-item">Women</a> <!-- No route specified -->
+                <a href="{{ route('accessories') }}" class="navbar-item">Accessories</a> <!-- No route specified -->
+                <a href="{{ route('toys') }}" class="navbar-item">Toys and Collectables</a> <!-- No route specified -->
             </div>
         </div>
     </nav>

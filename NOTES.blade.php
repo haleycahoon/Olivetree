@@ -1,0 +1,1 @@
+- need to past in the page content for the footer links

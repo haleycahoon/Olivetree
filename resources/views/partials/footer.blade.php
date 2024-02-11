@@ -6,40 +6,40 @@
             <div class="footer-column">
                 <h4>Customer Service</h4>
                 <div class="footer-links">
-                    <a href="#">Contact Us</a>
-                    <a href="#">Shipping Information</a>
-                    <a href="#">Track Your Order</a>
-                    <a href="#">Returns & Exchanges</a>
+                    <a href="{{ route('contactus') }}">Contact Us</a>
+                    <a href="{{ route('shippinginfo') }}">Shipping Information</a>
+                    <a href="{{ route('trackorder') }}">Track Your Order</a>
+                    <a href="{{ route('returnsandexchanges') }}">Returns & Exchanges</a>
                 </div>
             </div>
 
             <div class="footer-column">
                 <h4>Helpful Links</h4>
                 <div class="footer-links">
-                    <a href="#">FAQs</a>
-                    <a href="#">Help</a>
-                    <a href="#">Sign In</a>
-                    <a href="#">Rewards</a>
-                    <a href="#">Wishlist</a>
+                    <a href="{{ route('faqs') }}">FAQs</a>
+                    <a href="{{ route('help') }}">Help</a>
+                    <a href="{{ route('signin') }}">Sign In</a>
+                    <a href="{{ route('rewards') }}">Rewards</a>
+                    <a href="{{ route('wishlist') }}">Wishlist</a>
                 </div>
             </div>
 
             <div class="footer-column">
                 <h4>About</h4>
                 <div class="footer-links">
-                    <a href="#">About Us</a>
-                    <a href="#">Our Team</a>
-                    <a href="#">Our Mission</a>
-                    <a href="#">Careers</a>
+                    <a href="{{ route('aboutus') }}">About Us</a>
+                    <a href="{{ route('careers') }}">Our Team</a>
+                    <a href="{{ route('ourmission') }}">Our Mission</a>
+                    <a href="{{ route('careers') }}">Careers</a>
                 </div>
             </div>
 
             <div class="footer-column">
                 <h4>Site Info</h4>
                 <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Terms of Use</a>
+                    <a href="{{ route('privacypolicy') }}">Privacy Policy</a>
+                    <a href="{{ route('termsofservice') }}">Terms of Service</a>
+                    <a href="{{ route('termsofuse') }}">Terms of Use</a>
                 </div>
             </div>
 
