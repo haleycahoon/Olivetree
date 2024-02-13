@@ -43,6 +43,7 @@
         font-size: 36px;
         margin-bottom: 20px;
         color: #333;
+        padding-bottom: 40px;
     }
 
     .our-team-content {
@@ -51,7 +52,7 @@
 
     .team-member {
         display: flex;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 0 10px #5c642e;
@@ -75,6 +76,7 @@
         font-size: 24px;
         margin-bottom: 8px;
         color: #333;
+        padding-top: 20px;
     }
 
     .position {

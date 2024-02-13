@@ -28,7 +28,7 @@
                 <h4>About</h4>
                 <div class="footer-links">
                     <a href="{{ route('aboutus') }}">About Us</a>
-                    <a href="{{ route('careers') }}">Our Team</a>
+                    <a href="{{ route('ourteam') }}">Our Team</a>
                     <a href="{{ route('ourmission') }}">Our Mission</a>
                     <a href="{{ route('careers') }}">Careers</a>
                 </div>
