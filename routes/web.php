@@ -100,9 +100,5 @@ Route::get('Privacy Policy', function () {
 Route::get('Terms of Service', function () {
     return view('footerpages.siteinfo.termsofservice');
 })->name('termsofservice');
-
-Route::get('Terms of Use', function () {
-    return view('footerpages.siteinfo.termsofuse');
-})->name('termsofuse');
 ////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////

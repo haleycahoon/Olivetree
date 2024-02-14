@@ -11,8 +11,8 @@
         </div>
         <div class="faq-item">
             <h2>What is your return policy?</h2>
-            <p>We offer returns and exchanges within 30 days of the purchase date. Please refer to our Returns &
-                Exchanges page for more details.</p>
+            <p>We offer returns and exchanges within 30 days of the purchase date. Please refer to our 'Returns &
+                Exchanges' page for more details.</p>
         </div>
         <div class="faq-item">
             <h2>How do I contact customer support?</h2>
@@ -28,12 +28,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 40px 20px;
+        padding: 50px 20px;
     }
 
     h1 {
         font-size: 36px;
-        margin-bottom: 20px;
+        padding-bottom: 30px;
+        text-align: center;
     }
 
     .faq-content {
@@ -41,12 +42,14 @@
     }
 
     .faq-item {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
     }
 
     h2 {
         font-size: 24px;
-        margin-bottom: 10px;
+        padding-bottom: 30px;
     }
 
     p {

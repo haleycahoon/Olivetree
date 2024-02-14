@@ -9,10 +9,10 @@
             valued customer.
         </p>
         <h2>How it Works</h2>
-        <p>
+        <h6>
             Our Rewards Program is designed to thank you for choosing us. Here's
             how it works:
-        </p>
+        </h6>
         <ol>
             <li>Make a purchase and earn points based on your total spend.</li>
             <li>Accumulate points to unlock different reward tiers.</li>
@@ -45,12 +45,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 40px 20px;
+        padding: 50px 20px;
     }
 
     h1 {
         font-size: 36px;
         margin-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     .rewards-content {
@@ -60,16 +61,23 @@
     h2 {
         font-size: 24px;
         margin-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    h6 {
+        padding-bottom: 10px;
     }
 
     p {
         font-size: 16px;
         line-height: 1.6;
         margin-bottom: 15px;
+        padding-bottom: 30px;
     }
 
     ol {
         margin-bottom: 15px;
+        padding-bottom: 30px;
     }
 
     li {

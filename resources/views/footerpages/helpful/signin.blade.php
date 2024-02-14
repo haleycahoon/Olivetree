@@ -2,6 +2,6 @@
 
 @section('content')
 <div>
-    <h1>Sign In</h1>
+    <h1>Link this to sign in page eventually</h1>
 </div>
 @endsection

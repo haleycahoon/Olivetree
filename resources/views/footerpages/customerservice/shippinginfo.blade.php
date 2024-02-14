@@ -32,12 +32,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding: 50px 20px;
     }
 
     h1 {
         font-size: 36px;
-        margin-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     .shipping-content {
@@ -47,11 +47,12 @@
     h2 {
         font-size: 24px;
         margin-top: 15px;
+        padding-bottom: 30px;
     }
 
     p {
         font-size: 16px;
         line-height: 1.6;
-        margin-bottom: 15px;
+        padding-bottom: 30px;
     }
 </style>

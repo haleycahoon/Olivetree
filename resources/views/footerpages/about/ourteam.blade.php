@@ -35,7 +35,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 40px 20px;
+        padding: 50px 20px;
         background-color: #f9f9f9;
     }
 
@@ -43,7 +43,7 @@
         font-size: 36px;
         margin-bottom: 20px;
         color: #333;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
     }
 
     .our-team-content {
@@ -74,9 +74,9 @@
 
     h2 {
         font-size: 24px;
-        margin-bottom: 8px;
         color: #333;
         padding-top: 20px;
+        padding-bottom: 30px;
     }
 
     .position {

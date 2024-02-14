@@ -9,29 +9,38 @@
     </p>
     <div class="help-section">
         <h2>Contact Information</h2>
-        <p>Email: olivetreesupport@gmail.com</p>
-        <p>Phone: (123) 456-7890</p>
+        <p>Email: <a href="mailto:olivetreesupport@gmail.com">olivetreesupport@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
     </div>
     <div class="help-section">
         <h2>Common Issues</h2>
-        <p>Forgot Password</p>
-        <p>Payment Issues</p>
+        <ul>
+            <li><a href="#" onclick="showAlert('Forgot Password')">Forgot Password</a></li>
+            <li><a href="#" onclick="showAlert('Payment Issues')">Payment Issues</a></li>
+        </ul>
     </div>
 </div>
+
+<script>
+    function showAlert(issue) {
+        alert("For assistance with '" + issue + "', please contact our support team.");
+    }
+</script>
 @endsection
 
 <style scoped>
     .containerHelp {
         max-width: 800px;
         margin: 20px auto;
+        padding: 50px 20px;
     }
 
     .help-section {
-        margin-bottom: 20px;
+        margin-bottom: 40px; /* Increased margin for better separation */
     }
 
     .help-section h2 {
-        margin-bottom: 10px;
+        margin-bottom: 20px; /* Reduced margin for better alignment */
     }
 
     .help-section ul {
@@ -40,6 +49,11 @@
     }
 
     .help-section li {
-        margin-bottom: 5px;
+        margin-bottom: 10px; /* Increased margin between list items */
+    }
+
+    h1 {
+        padding-bottom: 30px;
+        text-align: center
     }
 </style>

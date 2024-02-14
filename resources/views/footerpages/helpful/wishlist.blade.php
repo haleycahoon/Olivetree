@@ -18,17 +18,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 40px 20px;
+        padding: 50px 20px;
     }
 
     h1 {
         font-size: 36px;
         margin-bottom: 20px;
+        padding-bottom: 30px;
+
     }
 
     p {
         font-size: 16px;
         line-height: 1.6;
         margin-bottom: 15px;
+        padding-bottom: 30px;
     }
 </style>

@@ -16,7 +16,6 @@
             engineer to join our development team...
         </p>
     </div>
-    <hr />
     <div class="job-listing">
         <h2>Marketing Specialist</h2>
         <p><strong>Location:</strong> New York, NY</p>
@@ -33,17 +32,32 @@
     .containerCareers {
         max-width: 800px;
         margin: 20px auto;
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        padding-bottom: 30px;
+        color: #333;
+        text-align: center;
     }
 
     .job-listing {
         margin-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
     }
 
     .job-listing h2 {
-        margin-bottom: 10px;
+        padding-bottom: 10px;
+        color: #555;
     }
 
     .job-listing p {
-        margin-bottom: 8px;
+        color: #777;
+    }
+
+    p {
+        padding-bottom: 30px;
     }
 </style>

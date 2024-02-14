@@ -10,7 +10,7 @@
             days of the purchase date.
         </p>
         <h2>Return Policy</h2>
-        <p>To initiate a return, please follow these steps:</p>
+        <h6>To initiate a return, please follow these steps:</h6>
         <ol>
             <li>
                 Contact our customer support team to request a return authorization.
@@ -44,12 +44,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 40px 20px;
+        padding: 50px 20px;
     }
 
     h1 {
         font-size: 36px;
-        margin-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     .returns-exchanges-content {
@@ -59,12 +59,17 @@
     h2 {
         font-size: 24px;
         margin-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    h6 {
+        padding-bottom: 10px;
     }
 
     p {
         font-size: 16px;
         line-height: 1.6;
-        margin-bottom: 15px;
+        padding-bottom: 30px;
     }
 
     ol {

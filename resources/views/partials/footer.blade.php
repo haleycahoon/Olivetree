@@ -39,7 +39,6 @@
                 <div class="footer-links">
                     <a href="{{ route('privacypolicy') }}">Privacy Policy</a>
                     <a href="{{ route('termsofservice') }}">Terms of Service</a>
-                    <a href="{{ route('termsofuse') }}">Terms of Use</a>
                 </div>
             </div>
 

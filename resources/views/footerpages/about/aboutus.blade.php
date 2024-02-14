@@ -4,7 +4,6 @@
 <div class="about-us-container">
     <h1>About Us</h1>
     <div class="about-us-content">
-        <img src="../assets/olivetree.png" alt="Olivetree Logo" class="company-logo" />
         <p>
             Welcome to Olivetree, your ultimate destination for fashion and style.
             At Olivetree, we believe in the power of clothing to express
@@ -35,7 +34,8 @@
             our designers to customer support, every team member plays a crucial
             role in making Olivetree a fashion destination you can trust.
         </p>
-        <!-- You can add team member profiles or a group photo here if desired -->
+        <img src="images/olivetree.png" alt="Olivetree Logo" class="company-logo" />
+
     </div>
 </div>
 @endsection
@@ -46,13 +46,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 40px 20px;
+        padding: 50px 20px;
         text-align: center;
     }
 
     h1 {
         font-size: 36px;
-        margin-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     .about-us-content {
@@ -60,8 +60,8 @@
     }
 
     .company-logo {
-        width: 300px;
-        height: 150px;
+        width: 190px;
+        height: 100px;
         object-fit: cover;
         margin-bottom: 20px;
         align-items: center;
@@ -70,13 +70,13 @@
     p {
         font-size: 16px;
         line-height: 1.6;
-        margin-bottom: 15px;
+        padding-bottom: 30px;
     }
 
     h2 {
         font-size: 24px;
         margin-top: 15px;
-        text-decoration: underline;
+        padding-bottom: 30px;
     }
 
     ul {
