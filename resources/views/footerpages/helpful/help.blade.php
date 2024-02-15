@@ -36,11 +36,11 @@
     }
 
     .help-section {
-        margin-bottom: 40px; /* Increased margin for better separation */
+        margin-bottom: 40px;
     }
 
     .help-section h2 {
-        margin-bottom: 20px; /* Reduced margin for better alignment */
+        margin-bottom: 20px;
     }
 
     .help-section ul {
@@ -49,7 +49,7 @@
     }
 
     .help-section li {
-        margin-bottom: 10px; /* Increased margin between list items */
+        margin-bottom: 10px;
     }
 
     h1 {

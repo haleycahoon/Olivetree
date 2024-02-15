@@ -63,18 +63,21 @@
     .privacy-policy-container {
         max-width: 800px;
         margin: 20px auto;
+        padding: 50px 20px;
     }
 
     h1 {
         font-size: 36px;
         margin-bottom: 20px;
         color: #333;
+        padding-bottom: 30px;
     }
 
     h2 {
         font-size: 24px;
         margin-bottom: 10px;
         color: #333;
+        padding-bottom: 20px;
     }
 
     p {
@@ -82,5 +85,6 @@
         line-height: 1.6;
         margin-bottom: 20px;
         color: #444;
+        padding-bottom: 30px;
     }
 </style>
