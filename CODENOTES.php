@@ -18,4 +18,4 @@ items and add routing and controller controlls
 
 
 NEED:
-womens pants 
+Shop sidebar hamburger button should close the side bar when clicked if the side bar is open
