@@ -45,12 +45,12 @@
       <div class="followus">
         <p class="followtitle">Follow Us</p>
         <div class="social-links">
-          <a href="https://www.discord.com/" target="_blank"><i class="bi bi-discord"></i></a>
-          <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
-          <a href="https://x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
-          <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
-          <a href="https://www.tiktok.com/" target="_blank"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.discord.com/" target="_blank" aria-label="Discord"><i class="bi bi-discord"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://x.com/" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
         </div>
       </div>
       <div class="copyright">
