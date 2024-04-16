@@ -1,7 +1,3 @@
-<?php
-    use App\Models\Cloth;
-    use Illuminate\Support\Facades\Auth;
-?>
 @extends('layouts.app')
 
 @section('content')
@@ -19,9 +15,16 @@
                     <p class="card-text price">${{ $cloth->price }}</p>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="btn">Add to Cart</a>
-                    <a href="#" class="btn">Favorite</a>
-
+                    <form action="{{ route('cart.add') }}" method="POST">
+                        @csrf
+                        <input type="hidden" name="cloth_id" value="{{ $cloth->id }}">
+                        <button type="submit" class="btn">Add to Cart</button>
+                    </form>
+                    <form action="{{ route('favorites.add') }}" method="POST">
+                        @csrf
+                        <input type="hidden" name="cloth_id" value="{{ $cloth->id }}">
+                        <button type="submit" class="btn">Favorite</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -30,19 +33,3 @@
 </div>
 {{ $clothes->links('pagination::bootstrap-4')}} 
 @endsection
-
-<style>
-    .price {
-        color: red;
-    }
-    .card {
-        border: none !important;
-    }
-    .btn{
-        background-color: #93a04a !important;
-    }
-    .card-footer {
-        display: flex;
-        justify-content: space-between;
-    }
-</style>
