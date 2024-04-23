@@ -16,16 +16,16 @@
     <button type="button" class="openbtn" onclick="openNav()">☰ Shop</button>
 
     <!-- quote carousel at top -->
-    <div id="quoteCarousel" class="carousel slide" data-ride="carousel">
+    <!-- <div id="quoteCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <p class="quote text-center">
                     $35 REAL Crew Sweatshirt <span>Shop now</span><span>Details</span>
                 </p>
             </div>
-        </div>
+        </div> -->
         <!-- carousel controls -->
-        <a class="carousel-control-prev" href="#quoteCarousel" role="button" data-slide="prev">
+        <!-- <a class="carousel-control-prev" href="#quoteCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
@@ -33,7 +33,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div> -->
 
     <!-- brand img -->
     <div class="brand-section">
@@ -63,7 +63,6 @@
             
             @if(Auth::check())
                 <a href="{{ route('account') }}" class="navbar-item">Account</a>
-                <!-- Add other authenticated user links as needed -->
                 <form id="logout-form" action="{{ route('logout') }}" method="POST">
                 @csrf
                 <button type="submit" class="navbar-item logout-button">Logout</button>

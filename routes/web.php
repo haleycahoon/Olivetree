@@ -27,9 +27,9 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('Accessories', function () {
         return view('accessories');
     })->name('accessories');
+///////////////////////////////////////////////////////////////////////////////////
 
-    Route::get('/account', [UserController::class, 'account'])->name('account')->middleware('auth');
-
+///////////////////////////////////////////////////////////////////////////////////
     // mens
     Route::prefix('mens')->group(function () {
         Route::get('shirts', [ClothController::class, 'mensshirts'])->name('mensshirts');
@@ -48,6 +48,10 @@ Route::group(['middleware' => ['web']], function () {
         Route::get('hairaccessories', [ClothController::class, 'womensHairAccessories'])->name('womenshairaccessories');
     });
     ///////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
     ///////////////////////////////////////////////////////////////////////////////////
     // FOOTER links
@@ -124,12 +128,15 @@ Route::group(['middleware' => ['web']], function () {
 
 
 
-    // Authentication routes
+    // routes
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
     Route::post('/login', [LoginController::class, 'login']);
     Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
     Route::post('/register', [RegisterController::class, 'register']);
     Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
+    Route::get('/account', [UserController::class, 'account'])->name('account')->middleware('auth');
+    Route::post('/cart/add', 'CartController@addItem')->name('cart.add');
+    Route::post('/favorites/add', 'FavoritesController@addItem')->name('favorites.add');
 
     ////////////////////////////////////////////////////////
     ///////////////////////////////////////////////////////////////////////////////////
