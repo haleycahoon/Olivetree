@@ -5,10 +5,12 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\FavoritesController;
+
 
 
 Route::group(['middleware' => ['web']], function () {
-
     ///////////////////////////////////////////////////////////////////////////////////
 // HEADER links
 // nav bar links
@@ -27,9 +29,9 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('Accessories', function () {
         return view('accessories');
     })->name('accessories');
-///////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////
 
-///////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////
     // mens
     Route::prefix('mens')->group(function () {
         Route::get('shirts', [ClothController::class, 'mensshirts'])->name('mensshirts');
@@ -128,7 +130,7 @@ Route::group(['middleware' => ['web']], function () {
 
 
 
-    // routes
+    //routes
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
     Route::post('/login', [LoginController::class, 'login']);
     Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
@@ -136,7 +138,16 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
     Route::get('/account', [UserController::class, 'account'])->name('account')->middleware('auth');
     Route::post('/cart/add', 'CartController@addItem')->name('cart.add');
-    Route::post('/favorites/add', 'FavoritesController@addItem')->name('favorites.add');
+    // Route::post('/favorites/add', 'FavoritesController@addItem')->name('favorites.add');
+// Cart routes
+    Route::post('/cart/add', [CartController::class, 'addItem'])->name('cart.add');
+    Route::get('/cart', [CartController::class, 'index'])->name('cart');
+
+    // Favorites routes
+    Route::post('/favorites/add', [FavoritesController::class, 'addItem'])->name('favorites.add');
+    Route::get('/favorites', [FavoritesController::class, 'index'])->name('favorites');
+
+
 
     ////////////////////////////////////////////////////////
     ///////////////////////////////////////////////////////////////////////////////////

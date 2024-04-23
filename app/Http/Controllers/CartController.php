@@ -1,10 +1,27 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Cloth;
 use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
-    //
+    public function addItem(Request $request)
+{
+    $clothId = $request->input('cloth_id');
+    // Logic to add item to cart, e.g., store in session or database
+    $cartItems = session()->get('cartItems', []);
+    $cartItems[] = $clothId;
+    session()->put('cartItems', $cartItems);
+    return redirect()->back()->with('success', 'Item added to cart!');
 }
+
+public function index()
+{
+    $cartItemIds = session()->get('cartItems', []);
+    $cartItems = Cloth::whereIn('id', $cartItemIds)->get();
+    return view('cart', compact('cartItems'));
+}
+    
+}
+
