@@ -12,4 +12,7 @@ class UserController extends Controller
         $user = Auth::user();
         return view('account', ['user' => $user]);
     }
+
+
+
 }

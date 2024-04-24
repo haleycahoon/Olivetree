@@ -144,8 +144,10 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/cart', [CartController::class, 'index'])->name('cart');
 
     // Favorites routes
-    Route::post('/favorites/add', [FavoritesController::class, 'addItem'])->name('favorites.add');
-    Route::get('/favorites', [FavoritesController::class, 'index'])->name('favorites');
+    // web.php
+    Route::post('/favorites/add', [FavoritesController::class, 'addToFavorites'])->name('favorites.add');
+    Route::get('/favorites', [FavoritesController::class, 'favorites'])->name('favorites');
+
 
 
 

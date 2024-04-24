@@ -2,26 +2,29 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Cloth;
+use App\Models\FavoriteClothes;
 use Illuminate\Http\Request;
 
 class FavoritesController extends Controller
 {
-    public function addItem(Request $request)
-{
-    $clothId = $request->input('cloth_id');
-    // Logic to add item to favorites, e.g., store in session or database
-    $favoriteItems = session()->get('favoriteItems', []);
-    $favoriteItems[] = $clothId;
-    session()->put('favoriteItems', $favoriteItems);
-    return redirect()->back()->with('success', 'Item added to favorites!');
-}
+    public function favorites()
+    {
+        // Fetch all favorite clothes (no authentication or guest identifier required)
+        $favoriteClothes = FavoriteClothes::paginate(10);
 
-public function index()
-{
-    $favoriteItemIds = session()->get('favoriteItems', []);
-    $favoriteItems = Cloth::whereIn('id', $favoriteItemIds)->get();
-    return view('favorites', compact('favoriteItems'));
-}
-}
+        return view('favorites', compact('favoriteClothes'));
+    }
 
+    public function addToFavorites(Request $request)
+    {
+        $clothId = $request->input('cloth_id');
+
+        // Create or update the favorite without any user or guest identifier
+        FavoriteClothes::updateOrCreate(
+            ['cloth_id' => $clothId],
+            ['cloth_id' => $clothId]
+        );
+
+        return response()->json(['success' => true]);
+    }
+}

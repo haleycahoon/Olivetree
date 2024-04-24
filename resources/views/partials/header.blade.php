@@ -60,11 +60,11 @@
             <a href="{{ route('men') }}" class="navbar-item">Men</a>
             <a href="{{ route('women') }}" class="navbar-item">Women</a>
             <a href="{{ route('accessories') }}" class="navbar-item">Accessories</a>
+            <a href="{{ route('favorites') }}" class="navbar-item">Favorites</a>
+            <a href="{{ route('cart') }}" class="navbar-item">Cart</a>
             
             @if(Auth::check())
                 <a href="{{ route('account') }}" class="navbar-item">Account</a>
-                <a href="{{ route('favorites') }}" class="navbar-item">Favorites</a>
-                <a href="{{ route('cart') }}" class="navbar-item">Cart</a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST">
                 @csrf
                 <button type="submit" class="navbar-item logout-button">Logout</button>
