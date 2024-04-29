@@ -18,7 +18,7 @@
         <div class="footer-links">
           <a href="{{ route('faqs') }}">FAQs</a>
           <a href="{{ route('help') }}">Help</a>
-          <!-- <a href="{{ route('login') }}">Sign In</a> -->
+          <a href="{{ route('login') }}">Sign In</a>
           <a href="{{ route('rewards') }}">Rewards</a>
           <a href="{{ route('wishlist') }}">Wishlist</a>
         </div>
@@ -61,18 +61,6 @@
   </div>
 </div>
 <style>
-  /* body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-} */
-
-  /* #app {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-} */
 
   .footer-container {
     flex-grow: 1;
@@ -94,7 +82,6 @@ html {
     min-width: 250px;
     max-width: 250px;
     margin: 10px;
-    /* Set margin to 10px on all sides */
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -157,13 +144,4 @@ html {
     max-width: 1200px;
     margin: 0 auto;
   }
-
-  /* a {
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 87.5;
-  } */
 </style>
