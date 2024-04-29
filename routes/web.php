@@ -84,9 +84,9 @@ Route::group(['middleware' => ['web']], function () {
         return view('footerpages.helpful.help');
     })->name('help');
 
-    Route::get('/login', function () {
-        return view('footerpages.helpful.signin');
-    })->name('login');
+    // Route::get('Sign In', function () {
+    //     return view('footerpages.helpful.signin');
+    // })->name('signin');
 
     Route::get('Rewards', function () {
         return view('footerpages.helpful.rewards');
