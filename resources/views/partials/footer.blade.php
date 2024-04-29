@@ -18,7 +18,7 @@
         <div class="footer-links">
           <a href="{{ route('faqs') }}">FAQs</a>
           <a href="{{ route('help') }}">Help</a>
-          <a href="{{ route('login') }}">Sign In</a>
+          <!-- <a href="{{ route('login') }}">Sign In</a> -->
           <a href="{{ route('rewards') }}">Rewards</a>
           <a href="{{ route('wishlist') }}">Wishlist</a>
         </div>
