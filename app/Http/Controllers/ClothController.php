@@ -110,5 +110,4 @@ class ClothController extends Controller
         $clothes = Cloth::where('category', 'Men-Belt')->paginate(10);
         return view('mens.mensbelts', ['clothes' => $clothes]);
     }
-    
 }
