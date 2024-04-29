@@ -35,19 +35,19 @@ class ClothController extends Controller
         return view('womens.womensaccessories', ['clothes' => $clothes]);
     }
 
-    public function womensBags() // Corrected method name
+    public function womensBags()
     {
         $clothes = Cloth::where('category', 'Female-Bags')->paginate(10);
         return view('womens.womensbags', ['clothes' => $clothes]);
     }
 
-    public function womensJewelry() // Corrected method name
+    public function womensJewelry() 
     {
         $clothes = Cloth::where('category', 'Female-Jewelry')->paginate(10);
         return view('womens.womensjewelry', ['clothes' => $clothes]);
     }
 
-    public function womensHairAccessories() // Corrected method name
+    public function womensHairAccessories()
     {
         $clothes = Cloth::where('category', 'Female-Hair-Accessories')->paginate(10);
         return view('womens.womenshairaccessories', ['clothes' => $clothes]);
@@ -84,14 +84,14 @@ class ClothController extends Controller
     }
 
     // MENS BAGS
-    public function mensBags() // Corrected method name
+    public function mensBags()
     {
         $clothes = Cloth::where('category', 'Men-Bags')->paginate(10);
         return view('mens.mensbags', ['clothes' => $clothes]);
     }
 
     // MENS JEWELRY
-    public function mensJewelry() // Corrected method name
+    public function mensJewelry()
     {
         $clothes = Cloth::where('category', 'Men-Jewelry')->paginate(10);
         return view('mens.mensjewelry', ['clothes' => $clothes]);
@@ -104,8 +104,8 @@ class ClothController extends Controller
         return view('mens.mensties', ['clothes' => $clothes]);
     }
 
-    // MENS BE;TS
-    public function mensBelts() // Corrected method name
+    // MENS BELTS
+    public function mensBelts()
     {
         $clothes = Cloth::where('category', 'Men-Belt')->paginate(10);
         return view('mens.mensbelts', ['clothes' => $clothes]);

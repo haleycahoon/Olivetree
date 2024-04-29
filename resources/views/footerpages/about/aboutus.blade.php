@@ -35,7 +35,6 @@
             our designers to customer support, every team member plays a crucial
             role in making Olivetree a fashion destination you can trust.
         </p>
-        <!-- You can add team member profiles or a group photo here if desired -->
     </div>
 </div>
 @endsection

@@ -9,7 +9,6 @@ class CartController extends Controller
     public function addItem(Request $request)
 {
     $clothId = $request->input('cloth_id');
-    // Logic to add item to cart, e.g., store in session or database
     $cartItems = session()->get('cartItems', []);
     $cartItems[] = $clothId;
     session()->put('cartItems', $cartItems);
