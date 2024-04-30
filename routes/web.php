@@ -148,6 +148,9 @@ Route::group(['middleware' => ['web']], function () {
     // favorites routes
     // Route::post('/favorites/add', [FavoritesController::class, 'addToFavorites'])->name('favorites.add');
     // Route::get('/favorites', [FavoritesController::class, 'favorites'])->name('favorites');
+    Route::get('favorites', function () {
+        return view('favorites');
+    })->name('favorites');
 
 
 

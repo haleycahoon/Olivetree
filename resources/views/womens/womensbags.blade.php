@@ -15,8 +15,8 @@
                     <p class="card-text price">${{ $cloth->price }}</p>
                 </div>
                 <div class="card-footer">
-                    <button class="btn add-to-cart" data-item-id="{{ $cloth->id }}">Add to Cart</button>
-                    <button class="btn add-to-favorites" data-item-id="{{ $cloth->id }}">Favorite</button>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <a href="#" class="btn">Favorite</a>
                 </div>
             </div>
         </div>
