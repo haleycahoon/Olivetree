@@ -6,20 +6,19 @@ use App\Models\Cloth;
 
 class FavoritesController extends Controller
 {
-//     public function addItem(Request $request)
-// {
-//     $clothId = $request->input('cloth_id');
-//     $cartItems = session()->get('cartItems', []);
-//     $cartItems[] = $clothId;
-//     session()->put('cartItems', $cartItems);
-//     return redirect()->back()->with('success', 'Item added to cart!');
-// }
+    public function addToFavorites(Request $request)
+    {
+        $clothId = $request->input('cloth_id');
+        $favoriteItems = session()->get('favoriteItems', []);
+        $favoriteItems[] = $clothId;
+        session()->put('favoriteItems', $favoriteItems);
+        return redirect()->back()->with('success', 'Item added to favorites!');
+    }
 
-// public function index()
-// {
-//     $cartItemIds = session()->get('cartItems', []);
-//     $cartItems = Cloth::whereIn('id', $cartItemIds)->get();
-//     return view('cart', compact('cartItems'));
-// }
-    
+    public function favorites()
+    {
+        $favoriteItemIds = session()->get('favoriteItems', []);
+        $favoriteItems = Cloth::whereIn('id', $favoriteItemIds)->get();
+        return view('favorites', compact('favoriteItems'));
+    }
 }
