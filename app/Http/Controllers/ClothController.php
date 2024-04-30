@@ -49,7 +49,7 @@ class ClothController extends Controller
 
     public function womensHairAccessories()
     {
-        $clothes = Cloth::where('category', 'Female-Hair-Accessories')->paginate(10);
+        $clothes = Cloth::where('category', 'Female-HairAccessories')->paginate(10);
         return view('womens.womenshairaccessories', ['clothes' => $clothes]);
     }
 
