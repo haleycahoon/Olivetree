@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <h1 class="text-center mt-5 mb-4">Favorite Items</h1>
-    <div class="row">
+    <!-- <div class="row">
         @foreach($favoriteClothes as $cloth)
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card h-100">
@@ -18,5 +18,5 @@
         </div>
         @endforeach
     </div>
-</div>
+</div> -->
 @endsection
