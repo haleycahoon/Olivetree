@@ -139,14 +139,15 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/account', [UserController::class, 'account'])->name('account')->middleware('auth');
     Route::post('/cart/add', 'CartController@addItem')->name('cart.add');
     // Route::post('/favorites/add', 'FavoritesController@addItem')->name('favorites.add');
-// Cart routes
+
+
+    // cart routes
     Route::post('/cart/add', [CartController::class, 'addItem'])->name('cart.add');
     Route::get('/cart', [CartController::class, 'index'])->name('cart');
 
-    // Favorites routes
-    // web.php
-    Route::post('/favorites/add', [FavoritesController::class, 'addToFavorites'])->name('favorites.add');
-    Route::get('/favorites', [FavoritesController::class, 'favorites'])->name('favorites');
+    // favorites routes
+    // Route::post('/favorites/add', [FavoritesController::class, 'addToFavorites'])->name('favorites.add');
+    // Route::get('/favorites', [FavoritesController::class, 'favorites'])->name('favorites');
 
 
 
