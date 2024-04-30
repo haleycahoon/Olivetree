@@ -1,12 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\FavoriteClothes;
 use Illuminate\Http\Request;
+use App\Models\Cloth;
 
-// class FavoritesController extends Controller
-// {
+class FavoritesController extends Controller
+{
 //     public function addItem(Request $request)
 // {
 //     $clothId = $request->input('cloth_id');
@@ -23,4 +22,4 @@ use Illuminate\Http\Request;
 //     return view('cart', compact('cartItems'));
 // }
     
-// }
+}
